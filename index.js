@@ -1,4 +1,4 @@
-fetch('https://www.dnd5eapi.co/api/spells/acid-arrow')
+fetch('https://www.dnd5eapi.co/api/classes/wizard')
     .then(res => {
         if (res.ok) {
             console.log('success');
@@ -9,3 +9,14 @@ fetch('https://www.dnd5eapi.co/api/spells/acid-arrow')
     })
     .then(data => console.log(data))
     .catch(error => console.log('ERROR'))
+
+fetch('')
+    .then (response => {
+        console.log(response);
+        return response.blob();
+    })
+    .then(blob => {
+        console.log(blob);
+        document.getElementById('Races').src = blob;
+    })
+
