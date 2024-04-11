@@ -4,8 +4,9 @@
     margin: 0;
 }
 
-.h3 {
-    color: aquamarine;
+h1 {
+    text-align: center;
+    color: rgb(235, 61, 61);
 }
 
 body {
@@ -18,7 +19,10 @@ body {
     display :flex;
     justify-content: center;
 }
-
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+}
 .card {
-    background: rgb(147, 15, 15) ;
+    background: rgb(211, 210, 195) ;
 }
