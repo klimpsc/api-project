@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.h3 {
+    color: aquamarine;
+}
+
+body {
+    background-color: rgb(52, 52, 52);
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.container {
+    display :flex;
+    justify-content: center;
+}
+
+.card {
+    background: rgb(147, 15, 15) ;
+}
