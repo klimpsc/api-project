@@ -1,0 +1,12 @@
+
+body {
+    background-color: rgb(52, 52, 52);
+}
+
+.container {
+    display :flex;
+}
+
+.card {
+    background-color: white ;
+}
