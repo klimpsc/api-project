@@ -16,8 +16,9 @@ body {
 }
 
 .container {
-    display :flex;
+    display: flex;
     justify-content: center;
+    
 }
 .search-wrapper {
     display: flex;
@@ -25,4 +26,5 @@ body {
 }
 .card {
     background: rgb(211, 210, 195) ;
+    
 }
