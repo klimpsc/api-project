@@ -14,17 +14,3 @@ body {
     margin-right: 50px;
     margin-left: 50px;
 }
-
-.container {
-    display: flex;
-    justify-content: center;
-    
-}
-.search-wrapper {
-    display: flex;
-    justify-content: center;
-}
-.card {
-    background: rgb(211, 210, 195) ;
-    
-}
