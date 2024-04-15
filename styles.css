@@ -3,14 +3,30 @@
     padding: 0;
     margin: 0;
 }
-
 h1 {
     text-align: center;
     color: rgb(235, 61, 61);
 }
-
 body {
     background-color: rgb(52, 52, 52);
     margin-right: 50px;
     margin-left: 50px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    background: rgb(211, 210, 195) ;
+
+}
+.card-image {
+    display: block;
+    width: 20px;
+    height: 30px;
 }
