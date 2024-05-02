@@ -29,3 +29,4 @@ async function featuresData() {
     const data = await response.json();
     console.log(data.results);
 }
+
