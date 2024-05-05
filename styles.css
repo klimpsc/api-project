@@ -33,11 +33,11 @@ body {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    justify-content: space-around;
     
 }
 .catagory:hover {
     background: rgb(219, 164, 164);
-    box-shadow: 10%;
 }
 #cards {
     display: flex;
@@ -46,4 +46,9 @@ body {
 }
 .card{
     width: 20%;
+    padding: 1.5em;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 4px black;
 }
