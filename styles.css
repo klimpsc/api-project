@@ -6,6 +6,8 @@
 h1 {
     text-align: center;
     color: rgb(100, 32, 32);
+    margin-bottom: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body {
     background-color: rgb(131, 131, 131);
@@ -20,6 +22,7 @@ body {
 .search-wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 .catagory {
     background: rgb(189, 174, 174) ;
@@ -35,5 +38,12 @@ body {
 .catagory:hover {
     background: rgb(219, 164, 164);
     box-shadow: 10%;
-
+}
+#cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width: 20%;
 }
