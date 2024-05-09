@@ -9,5 +9,7 @@ let features_url = "https://www.dnd5eapi.co/api/features"
 async function monstersData() {
     const response = await fetch(monsters_url);
     const data = await response.json();
-    console.log(data.results);
-}
+    console.log(data.results[4].name);
+    document.getElementById('root').
+    innerHTML= data.results[4].name;
+};
