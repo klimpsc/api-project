@@ -35,7 +35,7 @@ body {
 .catagory:hover {
     background: rgb(231, 225, 225);
 }
-#cards {
+#card {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
