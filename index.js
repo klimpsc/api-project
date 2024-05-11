@@ -1,6 +1,6 @@
 
 async function fetchMonsters(){
-    const res = await fetch("https://www.dnd5eapi.co/api/monsters/results")
+    const res = await fetch("https://www.dnd5eapi.co/api/monsters/")
     const { results } = await res.json()
 
     results.forEach(({ url }) => fetchMonstersDetails(url))
