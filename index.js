@@ -1,35 +1,35 @@
 
-async function fetchMonsters(){
-    const res = await fetch("https://www.dnd5eapi.co/api/monsters/")
+async function fetchPokemon(){
+    const res = await fetch("https://pokeapi.co/api/v2/pokemon/")
     const { results } = await res.json()
 
-    results.forEach(({ url }) => fetchMonstersDetails(url))
+    results.forEach(({ url }) => fetchPokemonDetails(url))
         
     }
 
-async function fetchMonstersDetails(url) {
+async function fetchPokemonDetails(url) {
     const res = await fetch(url)
-    const monstersData = await res.json()
+    const pokemonData = await res.json()
 
-    renderMonsters(monstersData)
+    renderPokemon(pokemonData)
 }
 
-function renderMonsters(monsters) {
+function renderPokemon(pokemon) {
     const container = document.querySelector('.container')
-    const card = generateCard(monsters)
+    const card = generateCard(pokemon)
     container.append(card)
 }
 
-function generateCard(monsters) {
+function generateCard(pokemon) {
     const cardDiv = document.createElement('div')
     const image = document.createElement('img')
-    cardDiv.className = 'cards'
-    image.src = monsters.image 
-    image.alt = monsters.name
+    cardDiv.className = 'card'
+    image.src = pokemon.sprites.other.dream_world.front_default
+    image.alt = pokemon.name
     const title = document.createElement('h2')
-    title.textContent = monsters.name
-    cardDiv.append(title, image)
+    title.textContent = pokemon.name
+    cardDiv.append(image, title)
 
     return cardDiv 
 }
-fetchMonsters()
+fetchPokemon()
