@@ -17,10 +17,6 @@ body {
     margin-right: 30px;
 }
 
-.catagory:hover {
-    background: rgb(231, 225, 225);
-}
-
 .card{
     padding: 1.5em;
     text-align: center;

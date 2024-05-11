@@ -9,7 +9,18 @@ async function fetchMonsters(){
 
 
 function renderMonster(monsters) {
-    monsters.forEach(({ name }) => console.log(name))
+    monsters.forEach(({ name }) => {
+        const container = document.querySelector('.container')
+        const card = addCard(name)
+        container.append(card)
+    })
 }
+
+function addCard(monstersName) {
+    const cardDiv = document.createElement('div')
+    cardDiv.textContent = monstersName
+    return cardDiv
+}
+fetchMonsters()
 
 
