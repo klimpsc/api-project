@@ -1,4 +1,19 @@
 const currentPokemon = {}
+const searchField = document.querySelector('input')
+
+
+searchField.addEventListener('change', () => {
+    const currentPokemonNames = Object.keys(currentPokemon)
+    const filteredPokemon = currentPokemonNames.filter(name => name. includes(searchField.value))
+    console.log(filteredPokemon)
+})
+
+
+
+
+
+
+
 async function fetchPokemon(){
     const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
     const { results } = await res.json()
@@ -7,6 +22,9 @@ async function fetchPokemon(){
     results.forEach(({ url }) => fetchPokemonDetails(url))
         
     }
+
+
+
 
 async function fetchPokemonDetails(url) {
     const res = await fetch(url)
