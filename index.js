@@ -1,7 +1,8 @@
-
+const currentPokemon = {}
 async function fetchPokemon(){
-    const res = await fetch("https://pokeapi.co/api/v2/pokemon/")
+    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
     const { results } = await res.json()
+
 
     results.forEach(({ url }) => fetchPokemonDetails(url))
         
@@ -10,6 +11,8 @@ async function fetchPokemon(){
 async function fetchPokemonDetails(url) {
     const res = await fetch(url)
     const pokemonData = await res.json()
+    if(!currentPokemon[pokemonData.name])
+        currentPokemon[pokemonData.name] = pokemonData
 
     renderPokemon(pokemonData)
 }
@@ -32,4 +35,9 @@ function generateCard(pokemon) {
 
     return cardDiv 
 }
+
+function renderNavigation(next, previous) {
+    // Navigation for later-on
+}
+
 fetchPokemon()
