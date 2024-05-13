@@ -2,11 +2,11 @@
 
 
 async function fetchData() {
-    const response = await fetch('https://www.dnd5eapi.co/api/monsters');
+    const response = await fetch('https://pokeapi.co/api/v2/pokemon');
     const {results} = await response.json();
-    console.log(results[6])
+    console.log(results[8].name)
     document.getElementById('template').
-    innerHTML=results[6]
+    innerHTML=results[8].name
 
 }
 fetchData()
