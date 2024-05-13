@@ -1,9 +1,16 @@
+async function fetchData() {
+    const response = await fetch('https://www.dnd5eapi.co/api/monsters/');
+    const monsters = await response.json();
+    console.log(monsters);
+}
+
+fetchData()
 
 
 
 
 
-
+///////////
 // async function fetchMonsters(){
 //     const res = await fetch("https://www.dnd5eapi.co/api/monsters")
 //     const { results } = await res.json()
