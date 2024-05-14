@@ -1,15 +1,10 @@
 
-
-
 async function fetchData() {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon');
     const {results} = await response.json();
-    console.log(results[8].name)
-    document.getElementById('template').
-    innerHTML=results[8].name
-
+    results.forEach(({name}) => console.log(name))
 }
-fetchData()
+const result = fetchData()
 
 
 
