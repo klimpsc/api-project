@@ -33,6 +33,33 @@ function generateCard(monster) {
         image.alt = "https://www.dnd5eapi.co" + monster.name
         cardDiv.append(image)
     }
+
+    const type = document.createElement('p')
+    type.textContent = "Type- " + monster.type
+    cardDiv.append(type)
+
+    const size = document.createElement('p')
+    size.textContent = "Size- " + monster.size
+    cardDiv.append(size)
+
+    const speed = document.createElement('p')
+    speed.textContent = "Walk Speed- " + monster.speed.walk
+    cardDiv.append(speed)
+
+    const languages = document.createElement('p')
+    languages.textContent = "Languages- " + monster.languages
+    cardDiv.append(languages)
+    
+    const alignment = document.createElement('p')
+    alignment.textContent = "Alignment- " + monster.alignment
+    cardDiv.append(alignment)
+
+    const stats = document.createElement('p')
+    stats.textContent = "S- " + monster.strength + " D- " + monster.dexterity
+    cardDiv.append(stats)
+
+
+
     return cardDiv 
 }
 
