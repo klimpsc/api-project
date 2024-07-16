@@ -55,13 +55,12 @@ function generateCard(monster) {
     cardDiv.append(alignment)
 
     const stats = document.createElement('p')
-    stats.textContent = "S- " + monster.strength + " D- " + monster.dexterity
+    stats.textContent = "S- " + monster.strength + " D- " + monster.dexterity + " C- " + monster.constitution + " I- " + monster.intelligence + " W- " + monster.wisdom + " C- " + monster.charisma
     cardDiv.append(stats)
 
-
-
-    return cardDiv 
+    return cardDiv
 }
+
 
 fetchMonsters()
 
